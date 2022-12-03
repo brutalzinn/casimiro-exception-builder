@@ -9,7 +9,8 @@ namespace CasimiroErrorException
 {
     public interface ICasimiroErrorExceptionBuilder
     {
-        ICasimiroErrorExceptionBuilder CriarMensagens(IEnumerable<string> mensagem);
+        ICasimiroErrorExceptionBuilder Juntar(HttpStatusCode statusCode);
+        ICasimiroErrorExceptionBuilder AdicionarMensagens(IEnumerable<string> mensagem);
         string ObterMensagensRandom(HttpStatusCode statusCode);
     }
 }

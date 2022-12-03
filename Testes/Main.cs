@@ -4,6 +4,11 @@ using Xunit.Abstractions;
 
 namespace Testes
 {
+    /// <summary>
+    /// Usando Xunit mas não tô testando nada. Go Horse Go Horse!
+    /// Projeto criado 03/12/2022 durante a espera do meu hamburguer
+    /// Que apesar de tudo, chegou.
+    /// </summary>
     public class Main
     {
         private readonly ITestOutputHelper output;
@@ -13,11 +18,11 @@ namespace Testes
         }
 
         [Fact]
-        public void CrioListaDeMensagensDadoUmStatusCode200_ChamoObterMensagens_RetornaUmaMensagemAleatoria()
+        public void CrioListaDeMensagensDadoUmStatusCode200_ChamoObterMensagens_RetornaUmaMensagemStatusCode200Aleatoria()
         {
             var teste = CasimiroErrorExceptionBuilder
             .Criar(System.Net.HttpStatusCode.NotFound)
-            .CriarMensagens(new List<string>()
+            .AdicionarMensagens(new List<string>()
             {
                 "Daniel comeu pão na casa do João",
                 "Quem eu?",
@@ -31,11 +36,11 @@ namespace Testes
         }
 
         [Fact]
-        public void CrioListaDeMensagensDadoUmStatusCode400_ChamoObterMensagens_RetornaUmaMensagemAleatoria()
+        public void CrioListaDeMensagensStatusCodeDiversos_ChamoObterMensagensParaStatusCode200EStatusCode400_RetornaUmaMensagemAleatoria()
         {
             var teste = CasimiroErrorExceptionBuilder
             .Criar(System.Net.HttpStatusCode.NotFound)
-            .CriarMensagens(new List<string>()
+            .AdicionarMensagens(new List<string>()
             {
                 "Daniel comeu pão na casa do João",
                 "Quem eu?",
@@ -53,17 +58,34 @@ namespace Testes
         {
             var teste = CasimiroErrorExceptionBuilder
             .Criar(System.Net.HttpStatusCode.NotFound)
-            .CriarMensagens(new List<string>()
+            .AdicionarMensagens(new List<string>()
             {
-                "TESTE 1",
+                "NotFound Crio lista de strings para NotFound",
+                "NotFound brasil perdeu para camarões",
+                "NotFound WSL tá querendo morrer mas vida que segue."
             })
-            .CriarMensagens(new List<string>()
+            .AdicionarMensagens(new List<string>()
             {
-                "TESTE 2",
+                "NotFound TESTE 2",
+            })
+            .Juntar(System.Net.HttpStatusCode.OK)
+            .AdicionarMensagens(new List<string>()
+            {
+                "OK Agora é Status CODE OK",
+                "OK Não é que deu OK Mesmo?",
+            })
+            .AdicionarMensagens(new List<string>()
+            {
+                "OK A gente pode criar infinitas listas para cada tipo de status code.",
+                "OK E assim adicionar frases aleatórias de erro?",
+                "OK Por que alguém faria isso? Porque estou esperando o hamburguer chegar mas já se passou uma hora"
             });
 
-            var resultado = teste.ObterMensagensRandom(System.Net.HttpStatusCode.NotFound);
-            output.WriteLine(resultado);
+            var resultadoNotFound = teste.ObterMensagensRandom(System.Net.HttpStatusCode.NotFound);
+            output.WriteLine(resultadoNotFound);
+
+            var resultadoOK = teste.ObterMensagensRandom(System.Net.HttpStatusCode.OK);
+            output.WriteLine(resultadoOK);
         }
     }
 }
