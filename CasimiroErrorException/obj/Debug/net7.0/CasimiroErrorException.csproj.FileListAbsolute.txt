@@ -1,0 +1,12 @@
+C:\projetos\CasimiroErrorException\CasimiroErrorException\bin\Debug\net7.0\CasimiroErrorException.deps.json
+C:\projetos\CasimiroErrorException\CasimiroErrorException\bin\Debug\net7.0\CasimiroErrorException.dll
+C:\projetos\CasimiroErrorException\CasimiroErrorException\bin\Debug\net7.0\CasimiroErrorException.pdb
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.csproj.AssemblyReference.cache
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.AssemblyInfoInputs.cache
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.AssemblyInfo.cs
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.csproj.CoreCompileInputs.cache
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.dll
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\refint\CasimiroErrorException.dll
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\CasimiroErrorException.pdb
+C:\projetos\CasimiroErrorException\CasimiroErrorException\obj\Debug\net7.0\ref\CasimiroErrorException.dll
