@@ -9,7 +9,9 @@
 ### Objetivo:
 
 Utilizar padrão fluente com C# para criar uma pilha de criação de frases aleatórias dado um determinado status code.
-É um projeto com fins de entretenimento e sem objetivo de uso prático. Mas será utilizado como base para criar um middleware de exceção de erro inspirado no Casimiro( meu Youtuber favorito ). Esse projeto é uma melhoria de 
+
+É um projeto com fins de entretenimento e sem objetivo de uso prático. 
+Mas será utilizado como base para criar um middleware de exceção de erro inspirado no Casimiro( meu Youtuber favorito ). Esse projeto é uma melhoria de 
 [api-minecraft-server-modpack-manager.CasimiroErrorHandler](https://github.com/boberto-projects/api-minecraft-server-modpack-manager/blob/master/MinecraftServer.Api/Middlewares/CasimiroErrorHandler.cs)
 
 
