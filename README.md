@@ -147,6 +147,7 @@ namespace Testes
 ## Pacotes usados:
 
 https://www.nuget.org/packages/StringPlaceholder/ StringPlaceHolder
+
 https://www.nuget.org/packages/xunit Xunit
 
 ## Documentações seguidas:
